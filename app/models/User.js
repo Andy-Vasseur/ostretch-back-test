@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("./sequelize-client");
 
+
 class User extends Model {}
 
 User.init({
@@ -27,5 +28,8 @@ User.init({
     tableName: "user"
 });
 
+// User.getFavorites = function (user_id){ 
+//     //requete à la main
+// }
 
 module.exports = User;
